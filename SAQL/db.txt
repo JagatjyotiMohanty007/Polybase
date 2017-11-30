@@ -1,0 +1,43 @@
+
+Servername: mrsprodlogserver
+Db name:- mrsProdLogSqlDB
+Sql db username :- wabtecadmin
+Password:- Xorail@123
+ 
+ 
+jdbc:sqlserver://mrsprodlogserver.database.windows.net:1433;database=mrsProdLogSqlDB;user=wabtecadmin@mrsprodlogserver;password={your_password_here};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30
+=====================================================================================
+CREATE EXTERNAL FILE FORMAT CSVFileFormat WITH (
+        FORMAT_TYPE = DELIMITEDTEXT,
+        FORMAT_OPTIONS (FIELD_TERMINATOR =',',
+		--DATE_FORMAT = 'yyyy-MM-ddTHH:mm:ss.fffZ',
+                USE_TYPE_DEFAULT = FALSE)
+);
+
+--4: Create an external table.  
+-- The external table points to data stored in Azure storage.  
+-- LOCATION: path to a file or directory that contains the data (relative to the blob container).  
+-- To point to all files under the blob container, use LOCATION='/'   
+
+CREATE EXTERNAL TABLE [dbo].[loco_pos_log] (
+		[datetime] VARCHAR(30) NOT NULL,
+		[source] VARCHAR(20) NULL,
+		[milepost] BIGINT NULL,
+		[track] VARCHAR(20) NULL,
+		[subdiv] INT NULL,
+		[lat] DECIMAL(11,8) NULL,
+		[lon] DECIMAL(11,8) NULL
+)  
+WITH (LOCATION='/',   
+        DATA_SOURCE = AzureStorage,  
+        FILE_FORMAT = CSVFileFormat  
+);  
+
+
+------------------------------------------------
+
+CREATE DATABASE SCOPED CREDENTIAL AzureStorageCredential
+WITH IDENTITY = 'user', Secret = 'Coc3yzURJZTyKbw9+XjNy5fAhQ7GzBqBOR0LGiZ8+F/ge7G+fc08QYxfkzc+EZ1yVXmMjNWFZn0B68qC4XUxnA==';
+
+
+------------------------------------------------------------------

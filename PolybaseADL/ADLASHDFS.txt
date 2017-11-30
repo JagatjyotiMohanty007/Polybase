@@ -1,0 +1,58 @@
+Step 1:
+CREATE MASTER KEY;
+
+Step 2:
+CREATE DATABASE SCOPED CREDENTIAL ADLCredential
+WITH
+    IDENTITY = '0930fc0f-fbaa-46f5-84d2-4489ded1f0f8@https://login.microsoftonline.com/90f1aac4-c661-46a9-83fd-e021705adcc9/oauth2/token',
+    SECRET = 'Yio0VoEME2Q0gqs0/WvVJ1n99RdM+p2I3lKwV3EiQto=';
+
+Step 3:
+
+ -- C: Create an external data source
+-- TYPE: HADOOP - PolyBase uses Hadoop APIs to access data in Azure Data Lake Store.
+-- LOCATION: Provide Azure Data Lake accountname and URI
+-- CREDENTIAL: Provide the credential created in the previous step.
+drop external data source AzureDataLakeStore
+CREATE EXTERNAL DATA SOURCE AzureDataLakeStore
+WITH (
+    TYPE = HADOOP,
+    LOCATION = 'adl://mrsprodadlstorage.azuredatalakestore.net',
+    CREDENTIAL = ADLCredential
+);
+
+Step 4:
+
+
+
+CREATE EXTERNAL FILE FORMAT CSVFileFormat WITH (
+        FORMAT_TYPE = DELIMITEDTEXT,
+        FORMAT_OPTIONS (FIELD_TERMINATOR =',',
+		--DATE_FORMAT = 'yyyy-MM-ddTHH:mm:ss.fffZ',
+                USE_TYPE_DEFAULT = FALSE)
+);
+Step 5:
+
+: Create an external table.  
+-- The external table points to data stored in Azure storage.  
+-- LOCATION: path to a file or directory that contains the data (relative to the blob container).  
+-- To point to all files under the blob container, use LOCATION='/'   
+drop external table [OCM_2080_DecLOG]
+CREATE EXTERNAL TABLE [dbo].[OCM_2080_DecLOG] (
+		[datetime] VARCHAR(30) NOT NULL,
+		[source] VARCHAR(20) NULL,
+		[milepost] BIGINT NULL,
+		[track] VARCHAR(20) NULL,
+		[subdiv] INT NULL,
+		[lat] DECIMAL(11,8) NULL,
+		[lon] DECIMAL(11,8) NULL
+)  
+WITH (LOCATION='/',   
+        DATA_SOURCE = AzureDataLakeStore,  
+        FILE_FORMAT = CSVFileFormat  
+); 
+
+
+Step 6:
+
+select count(*) from    OCM_2080_DecLOG 

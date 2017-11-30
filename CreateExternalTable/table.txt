@@ -1,0 +1,596 @@
+{"protocolVersion":4,"messageType":2080,"messageVersion":4,"flags":17,"dataLength":59,"messageNumber":0,"messageTime":"2017-06-03T03:00:31Z","variableHeaderSize":37,"timeToLive":300,"routingQos":40,"source":"mrs.l.mrs.3944:itc","destination":"mrs.b:04.0004","messageBody":{"railroadSCAC":"MRS ","currentPTCRefNum":0,"headEndMilepost":0,"headEndMilepostPrefixLen":0,"headEndMilepostPrefix":"","headEndMilepostSuffixLen":0,"headEndMilepostSuffix":"","headEndTrackNameLen":0,"headEndTrackName":"","headEndRailroadSCAC":"\u0000\u0000\u0000\u0000","headEndPTCSubdiv":0,"rearEndMilepost":0,"rearEndMilepostPrefixLen":0,"rearEndMilepostPrefix":"","rearEndMilepostSuffixLen":0,"rearEndMilepostSuffix":"","rearEndTrackNameLen":0,"rearEndTrackName":"","rearEndRailroadSCAC":"\u0000\u0000\u0000\u0000","rearEndPTCSubdiv":0,"speed":0,"currentPositionUncertainty":187,"directionOfTravel":"Unknown","headEndCurrentPositionLat":-22.88239996465294,"headEndCurrentPositionLon":-43.813300029613444,"positionValidity":"DGPS Solution Good","reasonForReport":"Requested by Office","locomotiveStateSummary":"Non-controlling","locomotiveState":"Cut Out","controlBrake":"Airbrake Cut in","timeElapsedParameter":0,"distanceElapsedParameter":0}} 
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+{
+   "protocolVersion":4,
+   "messageType":2083,
+   "messageVersion":4,
+   "flags":17,
+   "dataLength":264,
+   "messageNumber":520093810,
+   "messageTime":"2017-04-30T03:01:08Z",
+   "variableHeaderSize":37,
+   "timeToLive":300,
+   "routingQos":48,
+   "source":"mrs.l.mrs.3463:itc",
+   "destination":"mrs.b:02.0002",
+   "messageBody":{
+      "railroadSCAC":"MRS ",
+      "warnEnforceType":"Reactive Warning",
+      "trainIdLen":7,
+      "trainId":"NFQ0158",
+      "softwareVersionLen":7,
+      "onboardSoftwareVersion":"1.4.0.2",
+      "targetInformation":{
+         "targetType":"PTC function",
+         "targetDescriptionLen":23,
+         "targetDescription":"NON SYNCHRONIZED SUBDIV",
+         "startMilepost":950431,
+         "startMilepostPrefixLen":0,
+         "startMilepostPrefix":"",
+         "startMilepostSuffixLen":0,
+         "startMilepostSuffix":"",
+         "startTrackNameLen":9,
+         "startTrackName":"PRINCIPAL",
+         "startRailroadSCAC":"MRS ",
+         "startPTCSubdiv":100,
+         "endMilepost":800281,
+         "endMilepostPrefixLen":0,
+         "endMilepostPrefix":"",
+         "endMilepostSuffixLen":0,
+         "endMilepostSuffix":"",
+         "endTrackNameLen":9,
+         "endTrackName":"PRINCIPAL",
+         "endRailroadSCAC":"MRS ",
+         "endPTCSubdiv":100,
+         "targetSpeed":0
+      },
+      "warningInformation":{
+         "warningTime":"2017-04-30T03:01:05.351Z",
+         "startMilepost":903345,
+         "startMilepostPrefixLen":0,
+         "startMilepostPrefix":"",
+         "startMilepostSuffixLen":0,
+         "startMilepostSuffix":"",
+         "startTrackNameLen":9,
+         "startTrackName":"PRINCIPAL",
+         "railroadSCAC":"MRS ",
+         "ptcSubdiv":100,
+         "startPositionUncertainty":72,
+         "warningDistance":14181,
+         "directionOfTravel":"Decreasing Mileposts",
+         "trainSpeed":454,
+         "headEndPositionLat":-22.02802319377092,
+         "headEndPositionLon":-44.16776841358443
+      },
+      "enforcementInformation":{
+         "startMilepost":0,
+         "startMilepostPrefixLen":0,
+         "startMilepostPrefix":"",
+         "startMilepostSuffixLen":0,
+         "startMilepostSuffix":"",
+         "startTrackNameLen":0,
+         "startTrackName":"",
+         "railroadSCAC":"\u0000\u0000\u0000\u0000",
+         "ptcSubdiv":0,
+         "startPositionUncertainty":0,
+         "brakingDistance":0,
+         "directionOfTravel":"Unknown",
+         "trainSpeed":0,
+         "headEndPositionLat":180.0,
+         "headEndPositionLon":0.0
+      },
+      "emergencyEnforcementBrakingInformation":{
+         "startMilepost":0,
+         "startMilepostPrefixLen":0,
+         "startMilepostPrefix":"",
+         "startMilepostSuffixLen":0,
+         "startMilepostSuffix":"",
+         "startTrackNameLen":0,
+         "startTrackName":"",
+         "railroadSCAC":"\u0000\u0000\u0000\u0000",
+         "ptcSubdiv":0,
+         "startPositionUncertainty":0,
+         "brakingDistance":0,
+         "directionOfTravel":"Unknown",
+         "trainSpeed":0,
+         "headEndPositionLat":180.0,
+         "headEndPositionLon":0.0
+      },
+      "currentInformation":{
+         "time":"2017-04-30T03:01:08.352Z",
+         "milepost":903095,
+         "milepostPrefixLen":0,
+         "milepostPrefix":"",
+         "milepostSuffixLen":0,
+         "milepostSuffix":"",
+         "trackNameLen":9,
+         "trackName":"PRINCIPAL",
+         "railroadSCAC":"MRS ",
+         "ptcSubdiv":100,
+         "currentPositionUncertainty":72,
+         "directionOfTravel":"Decreasing Mileposts",
+         "trainSpeed":457,
+         "headEndPositionLat":-22.028231537728498,
+         "headEndPositionLon":-44.16767429074177
+      }
+   }
+} 
+-------------------------------------------------
+{
+   "protocolVersion":4,
+   "messageType":2052,
+   "messageVersion":3,
+   "flags":17,
+   "dataLength":16,
+   "messageNumber":26,
+   "messageTime":"2017-04-30T02:59:59Z",
+   "variableHeaderSize":37,
+   "timeToLive":59,
+   "routingQos":32,
+   "source":"mrs.l.mrs.7260:itc",
+   "destination":"mrs.b:02.0002",
+   "messageBody":{
+      "railroadSCAC":"MRS ",
+      "noOfPTCSubdivs":1,
+      "ptcSubdivs":[
+         {
+            "ptcSubdiv":100
+         }
+      ],
+      "ptcAuthorityRefNum":12451100,
+      "crcOfAuthority":4220310122,
+      "acknowledgementIndication":"Acknowledged and track limit validation completed"
+   }
+} 
+-----------------------------------------------------------
+{"protocolVersion":4,"messageType":1051,"messageVersion":4,"flags":9,"dataLength":434,"messageNumber":384,"messageTime":"2017-04-30T03:00:18Z","variableHeaderSize":37,"timeToLive":59,"routingQos":48,"source":"mrs.b:02.0002","destination":"mrs.l.mrs.7319:itc","messageBody":{"reasonForSending":"Modification of existing authority","crewActionRequired":"No crew action required","railroadSCAC":"MRS ","ptcAuthorityRefNum":17128100,"dispMovAuthRefNumLen":0,"dispMovAuthRefNum":"","authorityType":"Track warrant / track authority","noOfPTCSubdivs":1,"ptcSubdivs":[{"ptcSubdiv":100}],"authorityOKTimeStamp":"2017-04-29T19:48:00.344Z","noOfAuthorityVoidItems":0,"authorityVoidItems":[],"noOfAuthoritySegments":1,"authoritySegments":[{"authoritySegmentDirection":"Unidirectional","startingMilepost":470870,"startingMilepostPrefixLen":0,"startingMilepostPrefix":"","startingMilepostSuffixLen":0,"startingMilepostSuffix":"","endingMilepost":268580,"endingMilepostPrefixLen":0,"endingMilepostPrefix":"","endingMilepostSuffixLen":0,"endingMilepostSuffix":"","trackNameLen":9,"trackName":"PRINCIPAL","ptcSubdiv":100}],"trackLimitCRC":2581909838,"noOfInEffectAfterArrivalItems":0,"inEffectAfterArrivalItems":[],"noOfDoNotFoulLimitsAheadItems":0,"doNotFoulLimitsAheadItems":[],"noOfAuthorityRestrictionSegnments":0,"authorityRestrictionSegments":[],"noOfStopShortItems":0,"stopShortItems":[],"signalPTCSubdiv":0,"siteName":"                                       0","siteDeviceId":"                                       0","deviceType":"Not used","summaryTextLen":24,"summaryText":"TRACK AUTHORITY - 017128","noOfLines":12,"lines":[{"textLen":55,"text":"                              MRS NOVA LICENA RECEBIDA"},{"textLen":1,"text":" "},{"textLen":54,"text":"     LICENA NMERO: 17128               : Apr-29-2017"},{"textLen":1,"text":" "},{"textLen":21,"text":"     PARA: MRS   7319"},{"textLen":1,"text":" "},{"textLen":1,"text":" "},{"textLen":32,"text":"AUTORIZADO A PROSSEGUIR DO SINAL"},{"textLen":18,"text":"P2-10(1)-2E EM FFU"},{"textLen":19,"text":"NA LINHA PRINCIPAL "},{"textLen":28,"text":"AT SINAL P2-12(2)-2E EM FJQ"},{"textLen":19,"text":"NA LINHA PRINCIPAL "}],"crc":1106923226}} 
+
+-------------------------------------------------------------
+
+DROP EXTERNAL TABLE [dbo].[OCM_2080_DecLOG]
+GO
+
+CREATE EXTERNAL TABLE dbo.tbl_OCM_2080 (
+messageTime											Varchar(50) NOT NULL,
+LocoID												Varchar(50) NOT NULL,
+trainId												Varchar(50) NOT NULL,
+enforcementInformation_startMilepost				INT NULL,
+enforcementInformation_startTrackName				Varchar(50) NOT NULL,
+targetInformation_targetDescription					Varchar(50) NOT NULL,
+targetInformation_startMilepost						INT,
+targetInformation_startTrackName					Varchar(50) NOT NULL,
+targetInformation_endMilepost						INT, 
+targetInformation_endTrackName						Varchar(50) NOT NULL,
+enforcementInformation_brakingDistance				INT,
+enforcementInformation_directionOfTravel			Varchar(50) NOT NULL,
+currentInformation_time								Varchar(50) NOT NULL
+)
+WITH (LOCATION='/',   
+        DATA_SOURCE = AzureBlob,  
+        FILE_FORMAT = CSVFileFormat  
+); 
+
+
+CREATE EXTERNAL TABLE dbo.tbl_OCM_2083 (
+messageTime									Varchar(50) NOT NULL,
+LocoID										Varchar(50) NOT NULL,
+trainId										Varchar(50) NOT NULL,
+enforcementInformation_startMilepost		INT NULL,
+enforcementInformation_startTrackName		Varchar(50) NULL,
+targetInformation_targetDescription			Varchar(50) NULL,
+targetInformation_startMilepost				INT NULL,
+targetInformation_startTrackName			Varchar(50) NULL,
+targetInformation_endMilepost				INT NULL,
+targetInformation_endTrackName				Varchar(50) NULL,
+enforcementInformation_brakingDistance		INT NULL,
+enforcementInformation_directionOfTravel	Varchar(50) NULL,
+currentInformation_time						Varchar(50) NULL
+)
+WITH (LOCATION='/',   
+        DATA_SOURCE = AzureBlob,  
+        FILE_FORMAT = CSVFileFormat  
+); 
+
+
+CREATE EXTERNAL TABLE dbo.tbl_OCM_2052 (
+messageTime					Varchar(50) NOT NULL,
+LocoID						Varchar(50) NOT NULL,
+ptcAuthorityRefNum			INT, 	
+acknowledgementIndication	Varchar(100) NOT NULL,
+)
+WITH (LOCATION='/',   
+        DATA_SOURCE = AzureBlob,  
+        FILE_FORMAT = CSVFileFormat  
+);  
+======================================
+SELECT
+    messageTime AS "1900-01-01T00:00:00Z", source AS "XX", 
+	messageBody.trainId AS "X10",
+	messageBody.enforcementInformation.startMilepost AS "-10", messageBody.enforcementInformation.startTrackName AS "X20",
+	messageBody.targetInformation.targetDescription AS "X30", messageBody.targetInformation.startMilepost AS "-20",
+	messageBody.targetInformation.startTrackName AS "X40", messageBody.targetInformation.endMilepost AS "-30",
+	messageBody.targetInformation.endTrackName AS "X50", messageBody.enforcementInformation.brakingDistance AS "-40",
+	messageBody.enforcementInformation.directionOfTravel AS "X60", messageBody.currentInformation.time AS "1900-01-01T01:00:00Z"
+INTO
+    [mrsprodocmdecodedcsv]
+FROM
+    [MrsprodOcmDecodedEventhub]
+WHERE messageType = 2083  
+
+
+
+
+SELECT
+    messageTime AS "1900-01-01T00:00:00Z",
+    source AS "XX", 
+	messageBody.trainId AS "X10",
+	messageBody.enforcementInformation.startMilepost AS "-10", messageBody.enforcementInformation.startTrackName AS "X20",
+	messageBody.targetInformation.targetDescription AS "X30", messageBody.targetInformation.startMilepost AS "-20",
+	messageBody.targetInformation.startTrackName AS "X40", messageBody.targetInformation.endMilepost AS "-30",
+	messageBody.targetInformation.endTrackName AS "X50", messageBody.enforcementInformation.brakingDistance AS "-40",
+	messageBody.enforcementInformation.directionOfTravel AS "X60", messageBody.currentInformation.time AS "1900-01-01T01:00:00Z"
+INTO
+    [OutputMrsProdOcmDecoded2083CsvMsg]
+FROM
+    [MrsprodOcmDecodedEventhub]
+WHERE messageType = 2083
+====================================================
+SELECT 
+    messageTime AS "1900-01-01T00:00:00Z",
+    destination AS "XX", 
+	messageBody.ptcAuthorityRefNum AS "X10", 
+    messageBody.authorityType AS "X20",
+	messageBody.noOfAuthoritySegments AS "-10",
+    messageBody.authoritySegments[0].startingMilepost AS "-20", 
+	messageBody.authoritySegments[0].startingMilepost AS "-30",
+    messageBody.authoritySegments[0].endingMilepost AS "-40",
+	messageBody.authoritySegments[0].trackName AS "X30",
+    messageBody.summaryTextLen AS "-50", 
+    messageBody.summaryText AS "X40"
+INTO
+    [OutputMrsProdOcmDecoded1051CsvMsg]
+FROM
+    [MrsprodOcmDecodedEventhub]
+WHERE messageType = 1051;
+
+
+======================================
+SELECT
+    messageTime AS "1900-01-01T00:00:00Z", source AS "XX", 
+	messageBody.currentPTCRefNum AS "-10"
+	messageBody.headEndMilepost AS "-20", messageBody.headEndTrackName AS "X10",
+	messageBody.rearEndMilepost AS "-30", messageBody.rearEndTrackName AS "X20",	
+	messageBody.directionOfTravel AS "X30", messageBody.headEndPTCSubdiv AS "-40",
+    messageBody.headEndCurrentPositionLat AS "-50", messageBody.headEndCurrentPositionLon AS "-60"
+INTO
+    [mrsprodocmdecodedcsv]
+FROM
+    [MrsprodOcmDecodedEventhub]
+WHERE messageType = 2080
+
+
+
+SELECT
+    messageTime AS "1900-01-01T00:00:00Z", source AS "XX", 
+	messageBody.ptcAuthorityRefNum AS "-10", messageBody.acknowledgementIndication AS "X10"
+INTO
+    [mrsprodocmdecodedcsv]
+FROM
+    [MrsprodOcmDecodedEventhub]
+WHERE messageType = 2052
+=====================================
+CREATE EXTERNAL TABLE dbo.tbl_OCM_2083 (
+messageTime									Varchar(50) NOT NULL,
+LocoID										Varchar(50) NOT NULL,
+enforcementInformation_startMilepost		INT NULL,
+enforcementInformation_startTrackName		Varchar(50) NULL,
+targetInformation_targetDescription			Varchar(50) NULL,
+targetInformation_startMilepost				INT NULL,
+targetInformation_startTrackName			Varchar(50) NULL,
+targetInformation_endMilepost				INT NULL,
+targetInformation_endTrackName				Varchar(50) NULL,
+enforcementInformation_brakingDistance		INT NULL,
+enforcementInformation_directionOfTravel	Varchar(50) NULL,
+currentInformation_time						Varchar(50) NULL,
+InsertedDatetime							DATETIME DEFAULT GETDATE()
+)
+WITH (LOCATION='/',   
+        DATA_SOURCE = AzureBlob,  
+        FILE_FORMAT = CSVFileFormat  
+);  
+
+
+
+SELECT 
+    messageTime AS "1900-01-01T00:00:00Z",
+    destination AS "XX", 
+	messageBody.ptcAuthorityRefNum AS "X10", 
+    messageBody.authorityType AS "X20",
+	messageBody.noOfAuthoritySegments AS "-10",
+    messageBody.authoritySegments[0].startingMilepost AS "-20", 
+	messageBody.authoritySegments[0].startingMilepost AS "-30",
+    messageBody.authoritySegments[0].endingMilepost AS "-40",
+	messageBody.authoritySegments[0].trackName AS "X30",
+    messageBody.summaryTextLen AS "-50", 
+    messageBody.summaryText AS "X40"
+INTO
+    [OutputMrsProdOcmDecoded1051CsvMsg]
+FROM
+    [MrsprodOcmDecodedEventhub]
+WHERE messageType = 1051;
+======================================
+--SELECT
+--    messageTime AS "1900-01-01T00:00:00Z", source AS "X", messageBody.headEndMilepost AS "-1",
+--    messageBody.headEndTrackName AS "XX", messageBody.headEndPTCSubdiv AS "-2",
+--    messageBody.headEndCurrentPositionLat AS "-3", messageBody.headEndCurrentPositionLon AS "-4"
+--INTO
+--    [OutputMrsProdOcmDecoded2080CsvMsg]
+--FROM
+--    [MrsprodOcmDecodedEventhub]
+--WHERE messageType = 2080;
+
+SELECT
+    messageTime AS "1900-01-01T00:00:00Z",
+    source AS "XX", 
+	messageBody.trainId AS "X10",
+	messageBody.enforcementInformation.startMilepost AS "-10", messageBody.enforcementInformation.startTrackName AS "X20",
+	messageBody.targetInformation.targetDescription AS "X30", messageBody.targetInformation.startMilepost AS "-20",
+	messageBody.targetInformation.startTrackName AS "X40", messageBody.targetInformation.endMilepost AS "-30",
+	messageBody.targetInformation.endTrackName AS "X50", messageBody.enforcementInformation.brakingDistance AS "-40",
+	messageBody.enforcementInformation.directionOfTravel AS "X60", messageBody.currentInformation.time AS "1900-01-01T01:00:00Z"
+INTO
+    [OutputMrsProdOcmDecoded2083CsvMsg]
+FROM
+    [MrsprodOcmDecodedEventhub]
+WHERE messageType = 2083;
+
+SELECT
+    messageTime AS "1900-01-01T00:00:00Z", source AS "XX", 
+	messageBody.currentPTCRefNum AS "-10",
+	messageBody.headEndMilepost AS "-20", messageBody.headEndTrackName AS "X10",
+	messageBody.rearEndMilepost AS "-30", messageBody.rearEndTrackName AS "X20",	
+	messageBody.directionOfTravel AS "X30", messageBody.headEndPTCSubdiv AS "-40",
+    messageBody.headEndCurrentPositionLat AS "-50", messageBody.headEndCurrentPositionLon AS "-60"
+INTO
+    [OutputMrsProdOcmDecoded2080CsvMsg]
+FROM
+    [MrsprodOcmDecodedEventhub]
+WHERE messageType = 2080;
+
+SELECT
+    messageTime AS "1900-01-01T00:00:00Z",
+    source AS "XX", 
+	messageBody.ptcAuthorityRefNum AS "-10",
+    messageBody.acknowledgementIndication AS "X10"
+INTO
+    [OutputMrsProdOcmDecoded2052CsvMsg]
+FROM
+    [MrsprodOcmDecodedEventhub]
+WHERE messageType = 2052;
+=======================================
+--SELECT
+--    messageTime AS "1900-01-01T00:00:00Z", source AS "X", messageBody.headEndMilepost AS "-1",
+--    messageBody.headEndTrackName AS "XX", messageBody.headEndPTCSubdiv AS "-2",
+--    messageBody.headEndCurrentPositionLat AS "-3", messageBody.headEndCurrentPositionLon AS "-4"
+--INTO
+--    [OutputMrsProdOcmDecoded2080CsvMsg]
+--FROM
+--    [MrsprodOcmDecodedEventhub]
+--WHERE messageType = 2080;
+
+SELECT
+    messageTime AS "1900-01-01T00:00:00Z",
+    source AS "XX", 
+	messageBody.trainId AS "X10",
+	messageBody.enforcementInformation.startMilepost AS "-10", messageBody.enforcementInformation.startTrackName AS "X20",
+	messageBody.targetInformation.targetDescription AS "X30", messageBody.targetInformation.startMilepost AS "-20",
+	messageBody.targetInformation.startTrackName AS "X40", messageBody.targetInformation.endMilepost AS "-30",
+	messageBody.targetInformation.endTrackName AS "X50", messageBody.enforcementInformation.brakingDistance AS "-40",
+	messageBody.enforcementInformation.directionOfTravel AS "X60", messageBody.currentInformation.time AS "1900-01-01T01:00:00Z"
+INTO
+    [OutputMrsProdOcmDecoded2083CsvMsg]
+FROM
+    [MrsprodOcmDecodedEventhub]
+WHERE messageType = 2083;
+
+SELECT
+    messageTime AS "1900-01-01T00:00:00Z", source AS "XX", 
+	messageBody.currentPTCRefNum AS "-10",
+	messageBody.headEndMilepost AS "-20", messageBody.headEndTrackName AS "X10",
+	messageBody.rearEndMilepost AS "-30", messageBody.rearEndTrackName AS "X20",	
+	messageBody.directionOfTravel AS "X30", messageBody.headEndPTCSubdiv AS "-40",
+    messageBody.headEndCurrentPositionLat AS "-50", messageBody.headEndCurrentPositionLon AS "-60"
+INTO
+    [OutputMrsProdOcmDecoded2080CsvMsg]
+FROM
+    [MrsprodOcmDecodedEventhub]
+WHERE messageType = 2080;
+
+SELECT
+    messageTime AS "1900-01-01T00:00:00Z",
+    source AS "XX", 
+	messageBody.ptcAuthorityRefNum AS "-10",
+    messageBody.acknowledgementIndication AS "X10"
+INTO
+    [OutputMrsProdOcmDecoded2052CsvMsg]
+FROM
+    [MrsprodOcmDecodedEventhub]
+WHERE messageType = 2052;
+
+SELECT 
+    messageTime AS "1900-01-01T00:00:00Z", destination AS "XX", 
+	messageBody.ptcAuthorityRefNum AS "X10", messageBody.authorityType AS "X20",
+	messageBody.noOfAuthoritySegments AS "-10", messageBody.authoritySegments[0].startingMilepost AS "-20", 
+	GetArrayElement(messageBody.authoritySegments, 0).startingMilepost AS "-30", GetArrayElement(messageBody.authoritySegments, 0).endingMilepost AS "-40",
+	GetArrayElement(messageBody.authoritySegments, 0).trackName AS "X30", messageBody.summaryTextLen AS "-50", messageBody.summaryText AS "X40"
+INTO
+    [mrsprodocmdecodedcsv]
+FROM
+    [MrsprodOcmDecodedEventhub]
+WHERE messageType = 1051;
+
+==================================
+SELECT 
+    messageTime AS "1900-01-01T00:00:00Z", 
+	destination AS "XX", 
+	messageBody.ptcAuthorityRefNum AS "X10", 
+	messageBody.authorityType AS "X20",
+	messageBody.noOfAuthoritySegments AS "-10", 
+	GetRecordProperty(GetArrayElement(messageBody.authoritySegments, 0), 'startingMilepost') AS "-20", 
+	GetRecordProperty(GetArrayElement(messageBody.authoritySegments, 0), 'startingMilepost') AS "-30", 
+	GetRecordProperty(GetArrayElement(messageBody.authoritySegments, 0), 'endingMilepost') AS "-40",
+	GetRecordProperty(GetArrayElement(messageBody.authoritySegments, 0), 'trackName') AS "X30", 
+	messageBody.summaryTextLen AS "-50", 
+	messageBody.summaryText AS "X40"
+INTO
+    [mrsprodocmdecodedcsv]
+FROM
+    [MrsprodOcmDecodedEventhub]
+WHERE messageType = 1051 
+
+
+SELECT 
+    messageTime AS "1900-01-01T00:00:00Z",
+    destination AS "XX", 
+	messageBody.ptcAuthorityRefNum AS "X10",
+    messageBody.authorityType AS "X20",
+	messageBody.noOfAuthoritySegments AS "-10",
+    messageBody.authoritySegments.startingMilepost AS "-20", 
+    messageBody.authoritySegments.endingMilepost AS "-40",
+	messageBody.authoritySegments.trackName AS "X30",
+    messageBody.summaryTextLen AS "-50", messageBody.summaryText AS "X40"
+INTO
+    [OutputMrsProdOcmDecoded1051CsvMsg]
+FROM
+    [MrsprodOcmDecodedEventhub]
+WHERE messageType = 1051;
+
+
+
+GetArrayElement(messageBody.authoritySegments,0)
+
+
+GetArrayElement(GetArrayElement(messageBody.authoritySegments,0).startingMilepost, 0)
+===========================================================================================
+
+WITH (
+	SELECT 
+		messageTime, 
+		destination, 
+		messageBody.ptcAuthorityRefNum, 
+		messageBody.authorityType,
+		messageBody.noOfAuthoritySegments, 
+		GetArrayElement(messageBody.authoritySegments, 0) AS authoritySegments,
+		messageBody.summaryTextLen, 
+		messageBody.summaryText
+	FROM
+		[MrsprodOcmDecodedEventhub]
+	WHERE messageType = 1051
+) AS input
+
+SELECT 
+	messageTime AS "1900-01-01T00:00:00Z",
+	destination AS "XX", 
+	ptcAuthorityRefNum AS "X10", 
+	authorityType AS "X20",
+	noOfAuthoritySegments AS "-10", 
+	authoritySegments.startingMilepost AS "-20",
+	authoritySegments.endingMilepost AS "-30",
+	authoritySegments.trackName AS "X30"
+	summaryTextLen AS "-50", 
+	summaryText AS "X40"
+	INTO
+		[mrsprodocmdecodedcsv]
+	FROM
+		input 
+
+-------------------Arun----------
+SELECT 
+    ocm1051.messageTime AS "1900-01-01T00:00:00Z", 
+            ocm1051.destination AS "XX", 
+            ocm1051.messageBody.ptcAuthorityRefNum AS "X10", 
+            ocm1051.messageBody.authorityType AS "X20",
+            ocm1051.messageBody.noOfAuthoritySegments AS "-10", 
+            GetArrayElement(ocm1051.messageBody.authoritySegments,0) AS "-20", 
+            GetArrayElement(ocm1051.messageBody.authoritySegments.startingMilepost,0) AS "A",
+            GetArrayElement(ocm1051.messageBody.authoritySegments.endingMilepost, 0) AS "-40",
+            GetArrayElement(ocm1051.messageBody.authoritySegments.trackName, 0) AS "X30", 
+            ocm1051.messageBody.summaryTextLen AS "-50", 
+            ocm1051.messageBody.summaryText AS "X40"
+    FROM
+    [MrsprodOcmDecodedEventhub] AS ocm1051
+           
+
+=======================================================
+
+ 
+DROP EXTERNAL TABLE [dbo].[OCM_2080_DecLOG]
+GO
+
+CREATE EXTERNAL TABLE dbo.tbl_OCM_2080 (
+messageTime											Varchar(50) NOT NULL,
+LocoID												Varchar(50) NOT NULL,
+trainId												Varchar(50) NOT NULL,
+enforcementInformation_startMilepost				INT NULL,
+enforcementInformation_startTrackName				Varchar(50) NOT NULL,
+targetInformation_targetDescription					Varchar(50) NOT NULL,
+targetInformation_startMilepost						INT,
+targetInformation_startTrackName					Varchar(50) NOT NULL,
+targetInformation_endMilepost						INT, 
+targetInformation_endTrackName						Varchar(50) NOT NULL,
+enforcementInformation_brakingDistance				INT,
+enforcementInformation_directionOfTravel			Varchar(50) NOT NULL,
+currentInformation_time								Varchar(50) NOT NULL
+)
+WITH (LOCATION='/',   
+        DATA_SOURCE = AzureBlob,  
+        FILE_FORMAT = CSVFileFormat  
+); 
+
+
+CREATE EXTERNAL TABLE dbo.tbl_OCM_2083 (
+messageTime					Varchar(50) NOT NULL,
+LocoID						Varchar(50) NOT NULL,
+currentPTCRefNum			INT,
+headEndMilepost				INT,
+headEndTrackName			Varchar(50) NOT NULL,
+rearEndMilepost				INT,
+rearEndTrackName			Varchar(50) NOT NULL,
+directionOfTravel			Varchar(50) NOT NULL,
+headEndPTCSubdiv			INT,
+headEndCurrentPositionLat	DECIMAL(19,16),
+headEndCurrentPositionLon	DECIMAL(19,16)
+)
+WITH (LOCATION='/',   
+        DATA_SOURCE = AzureBlob,  
+        FILE_FORMAT = CSVFileFormat  
+); 
+
+
+CREATE EXTERNAL TABLE dbo.tbl_OCM_2052 (
+messageTime					Varchar(50) NOT NULL,
+LocoID						Varchar(50) NOT NULL,
+ptcAuthorityRefNum			INT, 	
+acknowledgementIndication	Varchar(100) NOT NULL,
+)
+WITH (LOCATION='/',   
+        DATA_SOURCE = AzureBlob,  
+        FILE_FORMAT = CSVFileFormat  
+); 
+
+
+CREATE EXTERNAL TABLE dbo.tbl_OCM_2052 (
+messageTime					Varchar(50) NOT NULL,
+LocoID						Varchar(50) NOT NULL,
+ptcAuthorityRefNum			INT, 	
+acknowledgementIndication	Varchar(100) NOT NULL,
+)
+WITH (LOCATION='/',   
+        DATA_SOURCE = AzureBlob,  
+        FILE_FORMAT = CSVFileFormat  
+);  
+==================================================

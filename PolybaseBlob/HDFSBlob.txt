@@ -1,0 +1,51 @@
+Step 1:
+CREATE MASTER KEY;
+
+Step 2:
+ CREATE DATABASE SCOPED CREDENTIAL BlobCredential
+WITH IDENTITY = 'user', Secret = 'vgTWyo0BqOgxXLoT6mixpOJuB2vVZLSWTVlYODSNo/yxBrpimv4yH2UOGXqFBJw6SfMr/Yw+U/7JOPSFMJ6jJA==';
+
+Step 3:
+
+CREATE EXTERNAL DATA SOURCE AzureBlob
+WITH (
+    TYPE = HADOOP, 
+    LOCATION = 'wasbs://ocmdecodedcsvlogs@mrsproddecodedlogs.blob.core.windows.net',
+    CREDENTIAL = BlobCredential  
+);
+
+Step 4:
+
+
+CREATE EXTERNAL FILE FORMAT CSVFileFormat WITH (
+        FORMAT_TYPE = DELIMITEDTEXT,
+        FORMAT_OPTIONS (FIELD_TERMINATOR =',',
+		--DATE_FORMAT = 'yyyy-MM-ddTHH:mm:ss.fffZ',
+                USE_TYPE_DEFAULT = FALSE)
+);
+
+Step 5:
+
+: Create an external table.  
+-- The external table points to data stored in Azure storage.  
+-- LOCATION: path to a file or directory that contains the data (relative to the blob container).  
+-- To point to all files under the blob container, use LOCATION='/'   
+drop external table [OCM_2080_DecLOG]
+CREATE EXTERNAL TABLE [dbo].[OCM_2080_DecLOG] (
+		[datetime] VARCHAR(30) NOT NULL,
+		[source] VARCHAR(20) NULL,
+		[milepost] BIGINT NULL,
+		[track] VARCHAR(20) NULL,
+		[subdiv] INT NULL,
+		[lat] DECIMAL(11,8) NULL,
+		[lon] DECIMAL(11,8) NULL
+)  
+WITH (LOCATION='/',   
+        DATA_SOURCE = AzureBlob,  
+        FILE_FORMAT = CSVFileFormat  
+); 
+
+
+Step 6:
+
+select count(*) from    OCM_2080_DecLOG 
